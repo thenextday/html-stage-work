@@ -1,0 +1,730 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 5475px;
+    width: 1519px;
+    margin: auto auto;
+}
+
+header .poster{
+    width: 1519px;height: 40px;
+    position: relative;
+    z-index: 500;
+    
+}
+
+header .poster ul{
+    width: 980px;height: 40px;
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+    display: grid;
+    grid-template-columns: 150px 530px 300px;
+}
+
+header .poster ul li:nth-of-type(1){
+    background: url(../img/index/header/logo.png) center center no-repeat;
+}
+
+header .poster ul .xiala{
+    height: 40px;
+}
+
+header .poster ul .xiala:hover .header_pic{
+    height: 185px;
+}
+
+header .poster ul .xiala .header_pic{
+    overflow: hidden;
+    width: 970px;
+    height: 0px;
+    position: absolute;
+    left: 5px;
+    top: 40px;
+    transition: all 0.5s;
+    
+}
+
+header .poster ul li span{
+    width: 30px;height: 30px;
+    display:inline-block;
+    background: url(../img/index/header/title_sprite.png) center center no-repeat;
+    margin-top: 5px;
+}
+
+header .poster ul li h3{
+    color: #464646;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 40px;
+    cursor: pointer;
+    vertical-align: top;
+    padding-right: 30px;
+}
+
+.top{
+    width: 1519px;
+    z-index: 50;
+    height: 88px;
+    background: url(../img/index/top/bg_top.png) center center no-repeat;
+    position: sticky;
+    top: 0px;
+}
+
+.top .top_center{
+    width: 1205px;
+    height: 88px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 129px 729px 142px;
+}
+
+.top .top_center .bosideng{
+    display: block;
+    background: url(../img/index/header/logo1.png) no-repeat;
+    background-position: 1px 12px;
+}
+
+.top .top_center .shouye{
+    list-style: none;
+    padding: 27px 0px 0px 46px;
+}
+
+.top .top_center .shouye li{
+    display: inline-block;
+    margin: 0px 18px;
+}
+
+.top .top_center .shouye .daohang{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.top .top_center .shouye .yellow{
+    color: #e69800;
+}
+
+.top .top_center .shouye .daohang:hover{
+    color: #e69800;
+}
+
+.top .top_center .jinru{
+    text-decoration: none;
+    color: #ffffff;
+    display:block;
+    background-color:#e69800 ;
+    width: 142px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    margin: 20px 60px;
+}
+
+.qiusheng{
+    position: relative;
+    top: -12px;
+}
+
+.qiusheng video{
+    width: 1519px;
+}
+
+.qiusheng .play_pause{
+    width: 64px;
+    height: 64px;
+    z-index: 20;
+    position: absolute;
+    top: 294px;
+    right: 736px;
+}
+
+.qiusheng .text{
+    width: 579px;
+    height: 290px;
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon{
+    z-index: 20;
+    width: 19px;
+    height: 62px;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.move{
+    height: 858px;
+    /* overflow: hidden; */
+    position: relative;
+    top: -952px;
+}
+
+.move video{
+    width: 1519px;
+}
+
+.move .bcg{
+    width: 545px;
+    height: 200px;
+    background: url(../img/index/xuebitu/sprite.png) -246px -221px no-repeat;
+    position: absolute;
+    bottom: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.move p{
+    font-style: italic;
+    font-size: .14rem;
+    color: #ffffff;
+    position: absolute;
+    bottom: 220px;
+    left: 510px;
+}
+
+.move .click1{
+    animation: run 5s infinite;
+}
+
+.move .some{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 500px;
+    bottom: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+@keyframes run{
+    from{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+
+    to{
+        opacity: 0;
+        transform: scale(3.0);
+    }
+}
+
+.move .click1_1{
+    animation:click1_1 5s infinite;
+}
+
+@keyframes click1_1{
+    0%{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+
+    100%{
+        opacity: 0;
+        transform: scale(2.0);
+    }
+}
+
+.move .click1_1_1 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.big_world{
+    position: relative;
+    top: -956px;
+}
+
+.big_world video{
+    width: 1519px;
+}
+
+.big_world .bcg_pics{
+    width: 524px;
+    height: 215px;
+    background: url(../img/index/xuebitu/sprite.png) -793px -215px no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.big_world p{
+    color: #ffffff;
+    font-size: .14rem;
+    line-height: .2rem;
+    font-style: italic;
+    position: absolute;
+    left: 560px;
+    bottom: 300px;
+}
+
+.big_world .click1{
+    animation: run 5s infinite;
+}
+
+.big_world .some{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 610px;
+    bottom: 230px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+@keyframes run{
+    from{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+
+    to{
+        opacity: 0;
+        transform: scale(3.0);
+    }
+}
+
+.big_world .click1_1{
+    animation:click1_1 5s infinite;
+}
+
+@keyframes click1_1{
+    0%{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+
+    100%{
+        opacity: 0;
+        transform: scale(2.0);
+    }
+}
+
+.big_world .click1_1_1 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.weather{
+    width: 1519px;
+    height: 1040px;
+    background-color: #000000;
+    position: relative;
+    top: -960px;
+}
+
+.weather .weather_pics{
+    display: flex;
+}
+
+.weather .weather_pics .win{
+    width: 506px;
+    height: 1040px;
+    overflow: hidden;
+    transition: all 5s;
+    flex: 1;
+}
+
+.weather .weather_pics .weather_rain:hover{
+    flex:2;
+    width: 1012px;
+}
+
+.weather_rain:hover~.weather_sunny{
+    flex:1;
+    width: 253px;
+}
+
+.weather_rain:hover~.weather_fog{
+    flex:1;
+    width: 253px;
+}
+
+.weather .weather_pics .weather_sunny:hover{
+    flex: 2;
+    width: 1012px;
+}
+
+.weather_sunny:hover~.weather_rain{
+    flex:1;
+    width: 253px;
+}
+
+.weather_sunny:hover~.weather_fog{
+    flex:1;
+    width: 253px;
+}
+
+.weather .weather_pics .weather_fog:hover{
+    flex: 2;
+    width: 1012px;
+}
+
+.weather_fog:hover~.weather_rain{
+    flex:1;
+    width: 253px;
+}
+
+.weather_fog:hover~.weather_sunny{
+    flex:1;
+    width: 253px;
+}
+
+.weather .bcg_top{
+    width: 729px;
+    height: 85px;
+    background: url(../img/index/xuebitu/sprite.png) 0px -422px no-repeat;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.weather .bcg_bottom_left{
+    width: 110px;
+    height: 80px;
+    background: url(../img/index/xuebitu/sprite.png) 0px -768px no-repeat;
+    position: absolute;
+    bottom: 130px;
+    left: 530px;
+}
+
+.weather .bcg_bottom_right{
+    width: 120px;
+    height: 80px;
+    background: url(../img/index/xuebitu/sprite.png) -113px -685px no-repeat;
+    position: absolute;
+    bottom: 130px;
+    right: 530px;
+}
+
+.weather .text_left{
+    width: 120px;
+    height: 150px;
+    position: absolute;
+    bottom: -30px;
+    left: 525px;
+}
+
+.weather .text_left .title{
+    text-align: center;
+    color: #e69800;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px #e69800 solid;
+}
+
+.weather .text_left .text{
+    color: #e69800;
+    margin-top: 10px;
+    font-size: 5px;
+    line-height: 10px;
+}
+
+.weather .text_right{
+    width: 120px;
+    height: 150px;
+    position: absolute;
+    bottom: -30px;
+    right: 525px;
+}
+
+.weather .text_right .title{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px #fff solid;
+}
+
+.weather .text_right .text{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 5px;
+    line-height: 10px;
+}
+
+.team{
+    position: relative;
+    top: -960px;
+}
+
+.team video{
+    width: 1519px;
+}
+
+.team .team_car{
+    width: 500px;
+    height: 172px;
+    background: url(../img/index/team/sprite.png) 0px 0px no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.team .team_text{
+    text-align: center;
+    font-size: .14rem;
+    line-height: .2rem;
+    color: #fff;
+    position: absolute;
+    bottom: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team .click1{
+    animation: run 5s infinite;
+}
+
+.team .some{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 660px;
+    bottom: 230px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+@keyframes run{
+    from{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+
+    to{
+        opacity: 0;
+        transform: scale(3.0);
+    }
+}
+
+.team .click1_1{
+    animation:click1_1 5s infinite;
+}
+
+@keyframes click1_1{
+    0%{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+
+    100%{
+        opacity: 0;
+        transform: scale(2.0);
+    }
+}
+
+.team .click1_1_1 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.ways{
+    width: 1519px;
+    height: 750px;
+    background: url(../img/index/ways/bg_section5.jpg) top center no-repeat;
+    position: relative;
+    top: -964px;
+    background-color: aquamarine;
+}
+
+.ways .ways_pics{
+    width: 755px;
+    height: 86px;
+    background:  url(../img/index/xuebitu/sprite.png) 1px -593px no-repeat;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ways .mountain{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 965px;
+    bottom: 260px;
+}
+
+.ways .mountain .click1{
+    animation: run 5s infinite;
+}
+
+.ways .mountain .some{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+@keyframes run{
+    from{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+
+    to{
+        opacity: 0;
+        transform: scale(3.0);
+    }
+}
+
+.ways .mountain .click1_1{
+    animation:click1_1 5s infinite;
+}
+
+@keyframes click1_1{
+    0%{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+
+    100%{
+        opacity: 0;
+        transform: scale(2.0);
+    }
+}
+
+.ways .mountain .click1_1_1 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.ways .moun_var{
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 300px;
+    left: 568px;
+    display: none;
+}
+
+.ways .mountain:hover~.moun_var{
+    display: block;
+}
+
+.activaor{
+    width: 42px;
+    height: 936px;
+    position: sticky;
+    top: 90px;
+    left: 20px;
+    z-index: 50;
+}
+
+.activaor img{
+    height: 600px;
+}
+
+.activaor .qiusheng{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.activaor .mo{
+    position: absolute;
+    top: 32px;
+}
+
+.activaor .bw{
+    position: absolute;
+    top: 164px;
+}
+
+.activaor .wea{
+    position: absolute;
+    top: 295px;
+}
+
+.activaor .tea{
+    position: absolute;
+    top: 427px;
+}
+
+.activaor .was{
+    position: absolute;
+    top: 558px;
+}
+
+.activaor .con{
+    display: block;
+    width: 32px;
+    height: 12px; 
+    opacity: 0.3;
+}
+
+footer{
+    width: 1519px;
+    height: 160px;
+    background-color: #000;
+    position: absolute;
+    top: 5315px;
+}
+
+footer .foot{
+    width: 1200px;
+    height: 140px;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+}
+
+footer .foot .pics{
+    width: 276px;
+    height: 86px;
+    margin-top: 25px;
+    background: url(../img/index/footer/nav_spr.png) -418px -158px;
+}
+
+footer .foot .text{
+    width: 778px;
+    height: 100px;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+}
+
+footer .foot .text p{
+    font-size: 12px;
+    line-height: 20px;
+    color: #aaaaaa;
+}
